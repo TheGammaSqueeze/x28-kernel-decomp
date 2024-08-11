@@ -1,8 +1,0 @@
-IMV:/kernel:/kernel.original
-IADD:00000001:/kernel.original.1
-IDSET:/kernel.original.1:c0a80a5f238156220142108400
-IMV:/kernel.original.1:/kernel.modded
-IADD:00000002:/kernel.x28
-IDSET:/kernel.x28:c0a80a5fa5a172100969782700
-IMV:/kernel.x28:/kernel.x18
-IDEL:/kernel.x18
