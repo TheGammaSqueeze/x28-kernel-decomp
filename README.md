@@ -70,6 +70,38 @@ Before you begin, you'll need to install the following drivers and tools on your
 
 ---
 
+## **Alternative Calibration for Sticks**
+
+If your analog sticks do not reach the full outer edges or have issues with circular inputs, you can try flashing alternative boot images for better calibration.
+
+### 1. **Reboot to Fastbootd Mode**
+   - Before flashing the alternative calibration files, ensure your Powkiddy X28 is in Fastbootd mode.
+   - If you’re not already in Fastbootd mode, enabled USB debugging and issue the following command:
+     ```bash
+     adb reboot fastboot
+     ```
+
+### 2. **Flash the Alternative Calibration Boot Images**
+
+   - **Alternative Calibration 1:**
+     - Open a command prompt window in the directory where the `boot.img.alternative` file is located.
+     - Flash the alternative calibration by issuing the following command:
+       ```bash
+       fastboot flash boot boot.img.alternative
+       ```
+     - Press the power button on your X28 to reboot the device.
+
+   - **Alternative Calibration 2:**
+     - If the first alternative calibration doesn't yield the desired results, you can try a second alternative calibration.
+     - Open a command prompt window in the directory where the `boot.img.alternative2` file is located.
+     - Flash the alternative calibration by issuing the following command:
+       ```bash
+       fastboot flash boot boot.img.alternative2
+       ```
+     - Press the power button on your X28 to reboot the device.
+
+---
+
 ## **Undoing the Fix**
 
 ### 1. **Enable USB Debugging**
@@ -88,3 +120,7 @@ Before you begin, you'll need to install the following drivers and tools on your
      fastboot flash boot boot.img.stock
      ```
    - Press the power button on your X28 to reboot the device.
+
+---
+
+This guide should help you address the cardinal snapping issue with the analog sticks on your Powkiddy X28. If the initial fix doesn't fully resolve your issue, the alternative calibrations may provide better results. Since this is still a work in progress, your feedback is appreciated.
